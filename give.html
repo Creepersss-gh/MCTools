@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCTools \ GIVE-generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="parent header">
+                <li class="block"><img src="img/logo.png" alt="Логотип"></li>
+                <li class="block"><h2 class="logo-text">MCTools</h2></li>
+                <li class="block"><button class="item" onclick="openLink('index.html')">Главная</li>
+                <li class="block"><button class="item-selected">GIVE-генератор</button></li>
+                <li class="block"><button class="discord">Discord</button></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="logo-text">GIVE-генератор (1.21.3+)</h1>
+    <label class="text">ID предмета</label>
+    <input id="ID" class="input">
+    <br>
+    <br>
+    <label class="text">Имя предмета</label>
+    <input id="name" class="input">
+    <label class="info">JSON-код временно не поддерживается</label>
+    <br>
+    <br>
+    <label class="text">Описание предмета</label>
+    <input id="lore" class="input">
+    <label class="info">JSON-код временно не поддерживается</label>
+    <br>
+    <br>
+    <label class="text">Съедобен</label>
+    <button class="button" id="ey" onclick="buttonCheckbox('ey','en')">Да</button>
+    <button class="button" id="en" onclick="buttonCheckbox('ey','en')" disabled="true">Нет</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button" onclick="give_gen_click()">Сгенерировать</button>
+    <br>
+    <label class="text">Результат:</label>
+    <br>
+    <textarea id="result" class="input" readonly></textarea>
+    <script src="scripts/main.js"></script>
+    <button class="button" onclick="copyResult()">Copy</button>
+</body>
+</html>
