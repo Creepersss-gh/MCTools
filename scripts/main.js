@@ -33,12 +33,12 @@ function give_gen_click() {
     }
 
     let command = "/give @s " + identificator +
-        "[item_name:'" + name +
-        "',lore:['" + lore + "']";
+        "[item_name='" + name +
+        "',lore=['" + lore + "']";
 
     // Проверяем, отключена ли кнопка "Да"
     if (eatable.disabled === true) {
-        command += ",consumable:{}";
+        command += ",consumable={}";
     }
 
     command += "]";

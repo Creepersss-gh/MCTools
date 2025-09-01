@@ -6,7 +6,6 @@ body {
         height: 100px;
         display: flex;
         align-items: center;
-        background-color: rgb(54, 54, 54);
 }
 
 .discord {
@@ -167,4 +166,28 @@ header {
     resize: vertical;  /* позволяет пользователю самому менять высоту */
     padding: 8px;      /* отступы внутри, как у других полей */
     box-sizing: border-box; /* чтобы padding не увеличивал ширину */
+}
+
+.follow {
+    border-radius: 6px;
+    background: #EBEBEB;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border: none;
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
+    font-family: "Kdam Thmor Pro";
+}
+
+.follow:hover {
+    border-radius: 6px;
+    background: #DEDEDE;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s ease;
 }
